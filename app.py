@@ -26,9 +26,9 @@ def i_or_p_less_than_0():
 def s_less_than_0():
     return render_template("s-less-than-0.html")
 
-@app.route('/s-more-than-0')
+@app.route('/s-more-than-100')
 def s_more_than_0():
-    return render_template("s-more-than-0.html")
+    return render_template("s-more-than-100.html")
 
 @app.route('/i-or-p-more-than-100')
 def i_or_p_more_than_100():
