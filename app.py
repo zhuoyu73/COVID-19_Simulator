@@ -30,6 +30,9 @@ def s_less_than_0():
 def s_more_than_0():
     return render_template("s-more-than-0.html")
 
+@app.route('/i-or-p-more-than-100')
+def i_or_p_more_than_100():
+    return render_template("i-or-p-more-than-100.html")
 
 if __name__ == '__main__':
     app.run(debug=True)
