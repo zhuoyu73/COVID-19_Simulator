@@ -14,11 +14,9 @@ def index():
 def create_game():
     return render_template("create-game.html")
 
-
-@app.route('/find_your_keys')
+@app.route('/find-your-keys')
 def find_your_keys():
-    return render_template("find_your_keys.html")
-
+    return render_template("find-your-keys.html")
 
 @app.route('/view-todo-list')
 def view_todo_list():
