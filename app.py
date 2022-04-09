@@ -10,25 +10,14 @@ def index():
     return render_template('index.html')
 
 
-@app.route('/create-todo', methods=["GET", "POST"])
-def create_todo():
-    if request.method == "POST":
-        global todo_list
-        global todo_count
+@app.route('/create-game')
+def create_game():
+    return render_template("create-game.html")
 
-        title: str = request.form['title']
-        description: str = request.form['description']
 
-        if title == '':
-            return render_template("create-todo.html")
-
-        new_todo: todo = todo(todo_count, title, description)
-        todo_list.append(new_todo)
-
-        todo_count += 1
-
-        return render_template("success.html", title=title, description=description)
-    return render_template("create-todo.html")
+@app.route('/find_your_keys')
+def find_your_keys():
+    return render_template("find_your_keys.html")
 
 
 @app.route('/view-todo-list')
