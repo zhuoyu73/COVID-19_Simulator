@@ -18,9 +18,17 @@ def create_game():
 def find_your_keys():
     return render_template("find-your-keys.html")
 
-@app.route('/view-todo-list')
-def view_todo_list():
-    return render_template('view-list.html', todo_list=todo_list)
+@app.route('/i-or-p-less-than-0')
+def i_or_p_less_than_0():
+    return render_template("i-or-p-less-than-0.html")
+
+@app.route('/s-less-than-0')
+def s_less_than_0():
+    return render_template("s-less-than-0.html")
+
+@app.route('/s-more-than-0')
+def s_more_than_0():
+    return render_template("s-more-than-0.html")
 
 
 if __name__ == '__main__':
