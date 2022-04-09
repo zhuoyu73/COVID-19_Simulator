@@ -34,5 +34,17 @@ def s_more_than_0():
 def i_or_p_more_than_100():
     return render_template("i-or-p-more-than-100.html")
 
+@app.route('/w-less-than-0')
+def w_less_than_0():
+    return render_template("w-less-than-0.html")
+
+@app.route('/w-more-than-100')
+def w_more_than_100():
+    return render_template("w-more-than-100.html")
+
+@app.route('/nothing')
+def nothing():
+    return render_template("nothing.html")
+
 if __name__ == '__main__':
     app.run(debug=True)
